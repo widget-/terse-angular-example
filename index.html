@@ -7,7 +7,7 @@
 <div ng-app="myApp">
   <div ng-controller="myController as vm">
     <p>Name : <input type="text" ng-model="vm.in"></p>
-    <h1 my-attribute-directive>Twice over: {{vm.out}}</h1>
+    <h1 my-attribute-directive="navy">Twice over: {{vm.out}}</h1>
     <h3>
       Alphabetized: {{vm.in | myFilter:vm.desc}}
       <label>
@@ -15,7 +15,7 @@
         descending
       </label>
       </h3>
-    <my-directive>Modified {{vm.count}} times</my-directive>
+    <my-element-directive>Modified {{vm.count}} times</my-element-directive>
   </div>
 </div>
 
